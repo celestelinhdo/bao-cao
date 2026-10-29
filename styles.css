@@ -23,3 +23,129 @@
 /* Interactive chart enhancements */
 .chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}.chart-toolbar .chart-unit{margin:0}.chart-region-filter{display:flex;align-items:center;gap:8px;font-size:10px;color:var(--muted)}.chart-region-filter select{max-width:220px;background:#252c1d;color:var(--text);border:1px solid var(--line);border-radius:7px;padding:7px 28px 7px 10px;font:inherit}.chart-wrap{position:relative;min-width:0}.chart{display:block;width:100%;height:auto;max-height:410px;overflow:visible}.chart .chart-bar,.chart .chart-mark,.chart .chart-slice{transition:opacity .12s ease,filter .12s ease;cursor:crosshair}.chart .chart-bar:hover,.chart .chart-mark:hover,.chart .chart-slice:hover{filter:brightness(1.18);stroke:#fff;stroke-width:1.4}.chart [data-tooltip]:focus{outline:none;stroke:#fff;stroke-width:2}.chart-tooltip{position:absolute;z-index:8;pointer-events:none;max-width:210px;padding:7px 9px;border:1px solid #535c40;border-radius:7px;background:#171a12f2;color:#f7f8ef;box-shadow:0 5px 18px #0005;font-size:10px;line-height:1.5;white-space:normal}.chart-tooltip[hidden]{display:none}.chart-details{font-size:10px;color:var(--muted);margin-top:10px}.chart-details summary{cursor:pointer}.chart-details .body-text{font-size:11px;padding-top:10px;overflow-wrap:anywhere}.chart-area{stroke:none}.chart-series-line{stroke-linecap:round;stroke-linejoin:round}.chart-slice{stroke:#1b1e15;stroke-width:2}.chart-region-filter select:focus-visible{outline:2px solid var(--yellow);outline-offset:2}
 @media(max-width:600px){.chart-tooltip{font-size:9px;max-width:170px}.chart-region-filter{width:100%;justify-content:space-between}.chart-region-filter select{max-width:65%}.chart{max-height:none}}
+
+/* ===== BẢNG MÀU HỒNG ĐÀO - TRẮNG ===== */
+:root {
+  --peach-pink: #F7B7C4;
+  --white: #FFFFFF;
+  --soft-pink: #FCE8EC;
+  --pink-text: #B94F70;
+  --dark-text: #49343B;
+}
+
+/* Nền tổng thể */
+body {
+  background: var(--white);
+  color: var(--dark-text);
+}
+
+/* Màn hình đăng nhập */
+.login-screen {
+  background: var(--soft-pink);
+}
+
+.login-story {
+  background: var(--peach-pink);
+}
+
+.login-side {
+  background: var(--white);
+}
+
+/* Logo và điểm nhấn */
+.brand-icon,
+.welcome-icon {
+  background: var(--peach-pink);
+  color: var(--pink-text);
+}
+
+.brand,
+.brand:hover {
+  color: var(--dark-text);
+}
+
+.brand-caption,
+.eyebrow,
+.login-description {
+  color: var(--pink-text);
+}
+
+/* Nút bấm */
+.button.yellow {
+  background: var(--peach-pink);
+  color: var(--dark-text);
+  border-color: var(--peach-pink);
+}
+
+.button.yellow:hover {
+  background: var(--pink-text);
+  color: var(--white);
+}
+
+/* Trường nhập liệu */
+input,
+textarea,
+select {
+  background: var(--white);
+  border-color: var(--soft-pink);
+  color: var(--dark-text);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--peach-pink);
+  outline-color: var(--peach-pink);
+}
+
+/* Khu vực làm việc */
+.app-screen,
+.app-body,
+.topbar,
+.sidebar {
+  background: var(--white);
+}
+
+.sidebar {
+  border-color: var(--soft-pink);
+}
+
+.nav-link:hover,
+.nav-link.active,
+.nav-link[aria-current="page"] {
+  background: var(--soft-pink);
+  color: var(--pink-text);
+}
+
+/* Thẻ nội dung, hộp thông tin và hộp thoại */
+.visual-card,
+.sidebar-note,
+.user-card,
+#help-dialog {
+  background: var(--white);
+  border-color: var(--soft-pink);
+}
+
+.pill,
+.avatar {
+  background: var(--soft-pink);
+  color: var(--pink-text);
+}
+
+/* Đường viền và chân trang */
+.topbar,
+.app-footer,
+.login-note {
+  border-color: var(--soft-pink);
+}
+
+/* Giữ khả năng đọc khi màn hình nhỏ */
+@media (max-width: 768px) {
+  .login-screen {
+    background: var(--soft-pink);
+  }
+
+  .login-side {
+    background: var(--white);
+  }
+}
